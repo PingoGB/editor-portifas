@@ -931,6 +931,12 @@ a {
   color: rgba(246, 242, 234, 0.82);
   font-size: 0.9rem;
   font-weight: 900;
+  transition: transform 200ms ease-out, border-color 200ms ease-out;
+}
+
+.compact-list span:hover {
+  border-color: var(--red);
+  transform: scale(1.05);
 }
 
 .timeline {
@@ -1096,6 +1102,7 @@ a {
   .cta-block h2 {
     font-size: clamp(2.55rem, 12vw, 4.3rem);
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
