@@ -1,7 +1,8 @@
 // Arquivo de conteúdo em Português.
-// Estrutura: cada bloco do site fica dentro da sua seção: global, nav, contact, home, work e about.
+// Estrutura: cada bloco do site fica dentro da sua seção: global, nav, contact, home e work.
 // Edite apenas os textos entre aspas. Não coloque código aqui.
 // Placeholders marcados com [INSERIR ...] são temporários e devem ser trocados por dados reais.
+// Na Home, edite [INSERIR TÍTULO DA APRESENTAÇÃO] e [INSERIR PARÁGRAFO DE APRESENTAÇÃO] no bloco home.presentation.
 // Para destacar uma palavra ou trecho em vermelho, envolva com **dois asteriscos**. Ex: "Edição com **retenção**".
 {
   "meta": {
@@ -16,7 +17,6 @@
   "nav": {
     "home": "Home",
     "work": "Trabalhos em Destaque",
-    "about": "Sobre Mim",
     "menuButton": "Menu",
     "languageToggle": "EN-US",
     "languageAria": "Trocar idioma",
@@ -25,7 +25,6 @@
     "nextEyebrow": "Próxima página",
     "next": {
       "home": "Próximo: Home",
-      "about": "Próximo: Sobre Mim",
       "work": "Próximo: Trabalhos em Destaque"
     }
   },
@@ -34,10 +33,33 @@
     "prefilledMessage": "Olá! Vi seu portfólio e quero conversar sobre um projeto."
   },
   "home": {
-    "hero": {
-      "eyebrow": "Edição para criadores",
-      "headline": "Edição de vídeo pensada pra **prender atenção**, não só pra cortar cena.",
-      "subtext": "Cortes, ritmo, narrativa e acabamento visual para vídeos curtos e long-form YouTube com foco em retenção."
+    "presentation": {
+      "eyebrow": "Sobre o editor",
+      "headline": "[INSERIR TÍTULO DA APRESENTAÇÃO]",
+      "text": "[INSERIR PARÁGRAFO DE APRESENTAÇÃO]",
+      "photoNote": "[INSERIR FOTO REAL] Esta área deve receber uma foto sua."
+    },
+    "skills": {
+      "eyebrow": "Habilidades",
+      "headline": "Competências de edição.",
+      "text": "",
+      "items": [
+        "Storytelling",
+        "Roteirização",
+        "Color Grading",
+        "Sound Design",
+        "Motion Graphics"
+      ]
+    },
+    "tools": {
+      "eyebrow": "Softwares",
+      "headline": "Ferramentas de trabalho.",
+      "text": "",
+      "items": [
+        "DaVinci Resolve",
+        "Fusion",
+        "Color Page"
+      ]
     },
     "beforeAfter": {
       "eyebrow": "Prova rápida",
@@ -78,34 +100,28 @@
         }
       ]
     },
-    "deliverables": {
-      "eyebrow": "O que eu entrego",
-      "headline": "Edição com intenção em cada corte.",
+    "process": {
+      "eyebrow": "Como eu trabalho",
+      "headline": "Um processo simples, direto e revisável.",
       "text": "",
-      "items": [
+      "steps": [
         {
-          "marker": "01",
-          "title": "Edição com intenção",
-          "description": "Cada corte tem um porquê por trás, cada decisão na minha edição é minuciosamente pensada para gerar retenção, ritmo e narrativa."
+          "title": "Briefing + raw",
+          "text": "Você me manda o material bruto e a gente alinha formato, objetivo e prazo em uma comunicação direta desde o começo."
         },
         {
-          "marker": "02",
-          "title": "Você foca no conteúdo, eu cuido do todo o resto",
-          "description": "Você grava o vídeo, me passa sua ideia e eu entrego o vídeo pronto, com tudo visando prender a atenção do seu público-alvo."
+          "title": "==Trabalho sujo==",
+          "text": "Eu assumo a parte demorada da edição para você focar no conteúdo, sempre buscando retenção, ritmo e clareza."
         },
         {
-          "marker": "03",
-          "title": "Versatilidade",
-          "description": "Adapto minha abordagem de edição a diferentes formatos, plataformas e estilos, garantindo que cada vídeo se destaque onde for publicado."
+          "title": "Ajustes finais",
+          "text": "A revisão já está inclusa: se algo precisar alinhar melhor com sua visão, eu ajusto antes da entrega final."
+        },
+        {
+          "title": "Entrega final",
+          "text": "Você recebe um vídeo pronto para publicar, dentro do prazo combinado e preparado para passar sua mensagem com força."
         }
       ]
-    },
-    "miniAbout": {
-      "eyebrow": "Sobre o editor",
-      "headline": "Um olhar de montagem para conteúdo que precisa performar.",
-      "text": "Editor de vídeo focado em criadores de conteúdo. Trabalho o corte como parte da narrativa, não como etapa mecânica.",
-      "linkLabel": "Conheça minha história",
-      "photoNote": "[INSERIR FOTO REAL] Use uma foto sua com boa luz e aparência profissional."
     },
     "finalCta": {
       "eyebrow": "Pronto para ter mais alcance?",
@@ -165,61 +181,6 @@
       "eyebrow": "Seu conteúdo pode ser o próximo.",
       "headline": "Vamos conversar sobre o vídeo que você quer **publicar**.",
       "text": "Me chama no WhatsApp e vamos falar sobre a sua proposta e seu projeto."
-    }
-  },
-  "about": {
-    "opening": {
-      "eyebrow": "Sobre mim",
-      "headline": "Olá!",
-      "text": "Me chamo Arthur e sou editor de vídeos, há 5 anos atrás descobri uma paixão pela pós-produção de conteúdo, e venho aprimorando minhas habilidades nesse setor desde então.",
-      "visionText": "Com habilidades variando entre cortes que **manipulam a emoção,** motion graphics apto de **explicar conceitos sem palavras**, pacing que rege o vídeo inteiro, **capturando a atenção** do telespectador e storytelling que **conecta qualquer um com sua história**, sou capaz de transformar material bruto em vídeos que entretêm, vendem e passam a mensagem de forma clara e envolvente.",
-      "photoNote": "[INSERIR FOTO REAL] Esta área deve receber uma foto sua."
-    },
-    "skills": {
-      "eyebrow": "Habilidades & softwares",
-      "headline": "Ferramentas a serviço da retenção.",
-      "text": "",
-      "items": [
-        "DaVinci Resolve",
-        "Fusion",
-        "Sound Design",
-        "Color Grading",
-        "Storytelling",
-        "Roteirização"
-      ]
-    },
-    "process": {
-      "eyebrow": "Como eu trabalho",
-      "headline": "Um processo simples, direto e revisável.",
-      "text": "",
-      "steps": [
-        {
-          "title": "Briefing + raw",
-          "text": "Uma reunião estabelecendo formato, objetivo e prazos a partir do seu material bruto."
-        },
-        {
-          "title": "==Trabalho sujo==",
-          "text": "Deixe toda a parte demorada comigo se e concentre apenas em criar o conteúdo."
-        },
-        {
-          "title": "Ajustes finais",
-          "text": "A revisão é inclusa no pacote! Se você achar necessário, eu faço ajustes para alinhar a entrega com sua visão."
-        },
-        {
-          "title": "Entrega final",
-          "text": "Um vídeo que passa sua mensagem, vende seu produto e entretem seu público, pronto para publicar."
-        }
-      ]
-    },
-    "risk": {
-      "eyebrow": "Menos risco",
-      "headline": "Comunicação direta, prazo combinado e revisão inclusa.",
-      "text": "A revisão faz parte do trabalho, então você não precisa se preocupar com entregas que não estejam de acordo com sua visão. A comunicação é direta e o prazo é combinado antes do início da edição."
-    },
-    "finalCta": {
-      "eyebrow": "Vamos transformar seu conteúdo.",
-      "headline": "Me chama e conta o que você quer **publicar**.",
-      "text": "Com uma conversa curta, eu entendo seu formato, prazo e o tipo de edição que faz sentido."
     }
   }
 }

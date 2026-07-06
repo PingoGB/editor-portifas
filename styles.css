@@ -625,11 +625,16 @@ a {
 }
 
 .mini-about,
-.about-opening {
+.about-opening,
+.home-presentation {
   display: grid;
   grid-template-columns: minmax(16rem, 0.82fr) minmax(0, 1fr);
   gap: clamp(1.6rem, 5.6vw, 4rem);
   align-items: center;
+}
+
+.home-presentation {
+  min-height: auto;
 }
 
 .portrait {
@@ -910,6 +915,24 @@ a {
   background: var(--red-hover);
 }
 
+.compact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.compact-list span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.6rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--line);
+  background: rgba(246, 242, 234, 0.03);
+  color: rgba(246, 242, 234, 0.82);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
 .timeline {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1001,7 +1024,8 @@ a {
   .case-header,
   .case-footer,
   .mini-about,
-  .about-opening {
+  .about-opening,
+  .home-presentation {
     grid-template-columns: 1fr;
   }
 

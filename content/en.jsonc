@@ -1,7 +1,8 @@
 // English content file.
-// Structure: every website block lives inside its section: global, nav, contact, home, work, and about.
+// Structure: every website block lives inside its section: global, nav, contact, home, and work.
 // Edit only the text inside quotation marks. Do not add code here.
 // Placeholders marked with [ADD ...] are temporary and should be replaced with real data.
+// On Home, edit [ADD PRESENTATION TITLE] and [ADD PRESENTATION PARAGRAPH] inside home.presentation.
 // To highlight a word or phrase in red, wrap it with **double asterisks**. Example: "Editing with **retention**".
 {
   "meta": {
@@ -16,7 +17,6 @@
   "nav": {
     "home": "Home",
     "work": "Featured Work",
-    "about": "About Me",
     "menuButton": "Menu",
     "languageToggle": "PT-BR",
     "languageAria": "Switch language",
@@ -25,7 +25,6 @@
     "nextEyebrow": "Next page",
     "next": {
       "home": "Next: Home",
-      "about": "Next: About Me",
       "work": "Next: Featured Work"
     }
   },
@@ -34,10 +33,33 @@
     "prefilledMessage": "Hi! I saw your portfolio and want to talk about a project."
   },
   "home": {
-    "hero": {
-      "eyebrow": "Editing for creators",
-      "headline": "Video editing built to **hold attention**, not just cut scenes.",
-      "subtext": "Cuts, rhythm, narrative, and visual polish for Reels, TikTok, Shorts, and YouTube with retention in mind."
+    "presentation": {
+      "eyebrow": "About the editor",
+      "headline": "[ADD PRESENTATION TITLE]",
+      "text": "[ADD PRESENTATION PARAGRAPH]",
+      "photoNote": "[ADD REAL PHOTO] This area should receive your photo."
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "headline": "Editing skills.",
+      "text": "",
+      "items": [
+        "Storytelling",
+        "Cut scripting",
+        "Color Grading",
+        "Sound Design",
+        "Motion Graphics"
+      ]
+    },
+    "tools": {
+      "eyebrow": "Software",
+      "headline": "Editing tools.",
+      "text": "",
+      "items": [
+        "DaVinci Resolve",
+        "Fusion",
+        "Color Page"
+      ]
     },
     "beforeAfter": {
       "eyebrow": "Fast proof",
@@ -78,34 +100,28 @@
         }
       ]
     },
-    "deliverables": {
-      "eyebrow": "What I deliver",
-      "headline": "Editing with intention in every cut.",
-      "text": "Replace placeholders with real data when you have concrete numbers or proof. No made-up stats are used here.",
-      "items": [
+    "process": {
+      "eyebrow": "How I work",
+      "headline": "A simple, direct, reviewable process.",
+      "text": "",
+      "steps": [
         {
-          "marker": "01",
-          "title": "Result",
-          "description": "[ADD REAL DATA] Videos edited for clarity, rhythm, and the desire to keep watching."
+          "title": "Briefing + raw",
+          "text": "You send the raw footage and we align format, goal, and deadline through direct communication from the start."
         },
         {
-          "marker": "02",
-          "title": "Time",
-          "description": "[ADD REAL DEADLINE] A direct workflow to turn raw footage into delivery without friction."
+          "title": "==Heavy lifting==",
+          "text": "I handle the time-consuming edit so you can focus on the content, with retention, rhythm, and clarity guiding the cut."
         },
         {
-          "marker": "03",
-          "title": "Strategic view",
-          "description": "Each editing decision considers hook, retention, platform context, and creator style."
+          "title": "Final adjustments",
+          "text": "A review round is included: if something needs to better match your vision, I adjust it before final delivery."
+        },
+        {
+          "title": "Final delivery",
+          "text": "You receive a video ready to publish, delivered within the agreed deadline and built to carry your message clearly."
         }
       ]
-    },
-    "miniAbout": {
-      "eyebrow": "About the editor",
-      "headline": "An editing eye for content that needs to perform.",
-      "text": "Video editor focused on content creators. I treat the cut as part of the story, not as a mechanical step.",
-      "linkLabel": "Read my story",
-      "photoNote": "[ADD REAL PHOTO] Use a well-lit, professional-looking photo of yourself."
     },
     "finalCta": {
       "eyebrow": "Ready for better editing?",
@@ -165,60 +181,6 @@
       "eyebrow": "Your content can be the next case",
       "headline": "Let's talk about the video you want to **publish**.",
       "text": "Message me on WhatsApp with the content format, references, and desired deadline."
-    }
-  },
-  "about": {
-    "opening": {
-      "eyebrow": "About Me",
-      "headline": "Video editing built to **hold attention**, not just cut scenes.",
-      "text": "Video editor focused on content creators. Every cut is planned to retain the viewer.",
-      "visionText": "Before thinking about effects, I think about rhythm, intention, and story: get in quickly, remove what is extra, and make every cut help the audience take the next step.",
-      "photoNote": "[ADD REAL PHOTO] This area should receive your photo."
-    },
-    "skills": {
-      "eyebrow": "Skills & software",
-      "headline": "Tools serving the cut.",
-      "text": "Adjust this list according to your real skill set and current services.",
-      "items": [
-        "Premiere Pro",
-        "After Effects",
-        "Motion Graphics",
-        "Color Grading",
-        "Cut scripting"
-      ]
-    },
-    "process": {
-      "eyebrow": "How I work",
-      "headline": "A simple, direct, reviewable process.",
-      "text": "The goal is to make the path from raw footage to final delivery clear.",
-      "steps": [
-        {
-          "title": "Raw + briefing",
-          "text": "You send me the files and the goal of the video."
-        },
-        {
-          "title": "Focused edit",
-          "text": "I cut with retention, rhythm, and narrative in mind."
-        },
-        {
-          "title": "Review",
-          "text": "You receive a version to watch and request adjustments."
-        },
-        {
-          "title": "Final delivery",
-          "text": "I make the agreed changes and deliver the final file."
-        }
-      ]
-    },
-    "risk": {
-      "eyebrow": "Lower risk",
-      "headline": "Direct communication, agreed deadline, and one review included.",
-      "text": "One review round is already part of the process, so details can be aligned without turning delivery into guesswork."
-    },
-    "finalCta": {
-      "eyebrow": "Let's get your video out of raw footage",
-      "headline": "Message me and tell me what you want to **publish**.",
-      "text": "With a short conversation, I understand your format, deadline, and the kind of edit that makes sense."
     }
   }
 }

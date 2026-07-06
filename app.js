@@ -8,7 +8,7 @@ const contentCache = {};
 const app = document.querySelector("#app");
 const nav = document.querySelector("[data-nav]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
-const pageOrder = ["home", "about", "work"];
+const pageOrder = ["home", "work"];
 
 const get = (path, source = state.content) =>
   path.split(".").reduce((value, key) => (value ? value[key] : undefined), source);
@@ -217,7 +217,7 @@ function renderFullVideo(video) {
   `;
 }
 
-function finalCta(section) {
+function finalCta(section, includeNext = true) {
   return `
     <section class="cta-block">
       <p class="eyebrow">${get(`${section}.eyebrow`)}</p>
@@ -225,7 +225,7 @@ function finalCta(section) {
       <p>${rich(get(`${section}.text`))}</p>
       <div class="cta-actions">
         ${button("global.ctaLabel")}
-        ${nextPageLink()}
+        ${includeNext ? nextPageLink() : ""}
       </div>
     </section>
   `;
@@ -262,17 +262,50 @@ function beforeAfterBlock(item) {
   `;
 }
 
+function compactList(items) {
+  return `
+    <div class="compact-list">
+      ${items.map((item) => `<span>${rich(item)}</span>`).join("")}
+    </div>
+  `;
+}
+
 function renderHome() {
-  const deliverables = get("home.deliverables.items");
+  const skills = get("home.skills.items");
+  const tools = get("home.tools.items");
+  const steps = get("home.process.steps");
   const comparisons = get("home.beforeAfter.comparisons");
   return `
     <div class="page">
-      <section class="section hero">
-        <div class="hero-inner">
-          <p class="eyebrow">${get("home.hero.eyebrow")}</p>
-          <h1>${rich(get("home.hero.headline"))}</h1>
-          <p>${rich(get("home.hero.subtext"))}</p>
+      <section class="section hero home-presentation">
+        <div class="portrait" data-label="${get("home.presentation.photoNote")}"></div>
+        <div class="text-stack">
+          <p class="eyebrow">${get("home.presentation.eyebrow")}</p>
+          <h1 class="page-title">${rich(get("home.presentation.headline"))}</h1>
+          <p>${rich(get("home.presentation.text"))}</p>
         </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">${get("home.skills.eyebrow")}</p>
+            <h2>${rich(get("home.skills.headline"))}</h2>
+          </div>
+          <p>${rich(get("home.skills.text"))}</p>
+        </div>
+        ${compactList(skills)}
+      </section>
+
+      <section class="section section-tight">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">${get("home.tools.eyebrow")}</p>
+            <h2>${rich(get("home.tools.headline"))}</h2>
+          </div>
+          <p>${rich(get("home.tools.text"))}</p>
+        </div>
+        ${compactList(tools)}
       </section>
 
       <section class="section section-tight">
@@ -291,17 +324,17 @@ function renderHome() {
       <section class="section">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">${get("home.deliverables.eyebrow")}</p>
-            <h2>${rich(get("home.deliverables.headline"))}</h2>
+            <p class="eyebrow">${get("home.process.eyebrow")}</p>
+            <h2>${rich(get("home.process.headline"))}</h2>
           </div>
-          <p>${rich(get("home.deliverables.text"))}</p>
+          <p>${rich(get("home.process.text"))}</p>
         </div>
-        <div class="deliver-grid">
-          ${deliverables.map((item) => `
-            <article class="deliver-item">
-              <span class="deliver-number">${item.marker}</span>
-              <h3>${rich(item.title)}</h3>
-              <p>${rich(item.description)}</p>
+        <div class="timeline">
+          ${steps.map((step, index) => `
+            <article class="timeline-step">
+              <strong>${String(index + 1).padStart(2, "0")}</strong>
+              <h3>${rich(step.title)}</h3>
+              <p>${rich(step.text)}</p>
             </article>
           `).join("")}
         </div>
@@ -349,72 +382,7 @@ function renderWork() {
         `).join("")}
       </section>
 
-      ${finalCta("work.finalCta")}
-    </div>
-  `;
-}
-
-function renderAbout() {
-  const skills = get("about.skills.items");
-  const steps = get("about.process.steps");
-  return `
-    <div class="page">
-      <section class="section about-opening">
-        <div class="portrait" data-label="${get("about.opening.photoNote")}"></div>
-        <div class="text-stack">
-          <p class="eyebrow">${get("about.opening.eyebrow")}</p>
-          <h1 class="page-title">${rich(get("about.opening.headline"))}</h1>
-          <p>${rich(get("about.opening.text"))}</p>
-          <p>${rich(get("about.opening.visionText"))}</p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">${get("about.skills.eyebrow")}</p>
-            <h2>${rich(get("about.skills.headline"))}</h2>
-          </div>
-          <p>${rich(get("about.skills.text"))}</p>
-        </div>
-        <div class="skills-grid">
-          ${skills.map((skill) => `
-            <div class="skill-item">
-              <span class="skill-mark" aria-hidden="true"></span>
-              <span>${rich(skill)}</span>
-            </div>
-          `).join("")}
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">${get("about.process.eyebrow")}</p>
-            <h2>${rich(get("about.process.headline"))}</h2>
-          </div>
-          <p>${rich(get("about.process.text"))}</p>
-        </div>
-        <div class="timeline">
-          ${steps.map((step, index) => `
-            <article class="timeline-step">
-              <strong>${String(index + 1).padStart(2, "0")}</strong>
-              <h3>${rich(step.title)}</h3>
-              <p>${rich(step.text)}</p>
-            </article>
-          `).join("")}
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="risk-block">
-          <p class="eyebrow">${get("about.risk.eyebrow")}</p>
-          <h2>${rich(get("about.risk.headline"))}</h2>
-          <p>${rich(get("about.risk.text"))}</p>
-        </div>
-      </section>
-
-      ${finalCta("about.finalCta")}
+      ${finalCta("work.finalCta", false)}
     </div>
   `;
 }
@@ -434,7 +402,6 @@ function render() {
   const pages = {
     home: renderHome,
     work: renderWork,
-    about: renderAbout,
   };
 
   updateSharedText();
