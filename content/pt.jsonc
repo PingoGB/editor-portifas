@@ -1,0 +1,225 @@
+// Arquivo de conteúdo em Português.
+// Estrutura: cada bloco do site fica dentro da sua seção: global, nav, contact, home, work e about.
+// Edite apenas os textos entre aspas. Não coloque código aqui.
+// Placeholders marcados com [INSERIR ...] são temporários e devem ser trocados por dados reais.
+// Para destacar uma palavra ou trecho em vermelho, envolva com **dois asteriscos**. Ex: "Edição com **retenção**".
+{
+  "meta": {
+    "lang": "pt-BR",
+    "title": "Portfolio Editor de Video",
+    "description": "Portfolio de editor de video freelancer para criadores de conteudo."
+  },
+  "global": {
+    "brand": "Arthur Gabriel / Editor",
+    "ctaLabel": "Vamos conversar"
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Trabalhos em Destaque",
+    "about": "Sobre Mim",
+    "menuButton": "Menu",
+    "languageToggle": "EN-US",
+    "languageAria": "Trocar idioma",
+    "ariaLabel": "Navegação principal",
+    "skipLink": "Pular para o conteúdo",
+    "nextEyebrow": "Próxima página",
+    "next": {
+      "home": "Próximo: Home",
+      "about": "Próximo: Sobre Mim",
+      "work": "Próximo: Trabalhos em Destaque"
+    }
+  },
+  "contact": {
+    "whatsappNumber": "5548996464120",
+    "prefilledMessage": "Olá! Vi seu portfólio e quero conversar sobre um projeto."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Edição para criadores",
+      "headline": "Edição de vídeo pensada pra **prender atenção**, não só pra cortar cena.",
+      "subtext": "Cortes, ritmo, narrativa e acabamento visual para vídeos curtos e long-form YouTube com foco em retenção."
+    },
+    "beforeAfter": {
+      "eyebrow": "Prova rápida",
+      "headline": "Do bruto ao vídeo que segura o olhar.",
+      "text": "",
+      "comparisons": [
+        {
+          "title": "Talking Head · Shorts",
+          "format": "vertical",
+          "raw": {
+            "type": "raw",
+            "label": "RAW",
+            "src": "./assets/videos/TALKHEAD_UNEDITED.mp4",
+            "alt": "Talking head bruto antes da edição"
+          },
+          "edited": {
+            "type": "edited",
+            "label": "EDITED",
+            "src": "./assets/videos/TALKHEAD_EDITED.mp4",
+            "alt": "Talking head editado para Shorts"
+          }
+        },
+        {
+          "title": "Gameplay · Long-form YouTube",
+          "format": "horizontal",
+          "raw": {
+            "type": "raw",
+            "label": "RAW",
+            "src": "./assets/videos/GAMEPLAY_UNEDITED.mp4",
+            "alt": "Gameplay bruto antes da edição"
+          },
+          "edited": {
+            "type": "edited",
+            "label": "EDITED",
+            "src": "./assets/videos/GAMEPLAY_EDITED.mp4",
+            "alt": "Gameplay editado para YouTube long-form"
+          }
+        }
+      ]
+    },
+    "deliverables": {
+      "eyebrow": "O que eu entrego",
+      "headline": "Edição com intenção em cada corte.",
+      "text": "",
+      "items": [
+        {
+          "marker": "01",
+          "title": "Edição com intenção",
+          "description": "Cada corte tem um porquê por trás, cada decisão na minha edição é minuciosamente pensada para gerar retenção, ritmo e narrativa."
+        },
+        {
+          "marker": "02",
+          "title": "Você foca no conteúdo, eu cuido do todo o resto",
+          "description": "Você grava o vídeo, me passa sua ideia e eu entrego o vídeo pronto, com tudo visando prender a atenção do seu público-alvo."
+        },
+        {
+          "marker": "03",
+          "title": "Versatilidade",
+          "description": "Adapto minha abordagem de edição a diferentes formatos, plataformas e estilos, garantindo que cada vídeo se destaque onde for publicado."
+        }
+      ]
+    },
+    "miniAbout": {
+      "eyebrow": "Sobre o editor",
+      "headline": "Um olhar de montagem para conteúdo que precisa performar.",
+      "text": "Editor de vídeo focado em criadores de conteúdo. Trabalho o corte como parte da narrativa, não como etapa mecânica.",
+      "linkLabel": "Conheça minha história",
+      "photoNote": "[INSERIR FOTO REAL] Use uma foto sua com boa luz e aparência profissional."
+    },
+    "finalCta": {
+      "eyebrow": "Pronto para ter mais alcance?",
+      "headline": "Entre em contato e vamos juntos transformar seu conteúdo em vídeo que **prende atenção.**",
+      "text": "O contato é direto pelo WhatsApp, com uma conversa direta sobre planos, projetos e prazos."
+    }
+  },
+  "work": {
+    "intro": {
+      "eyebrow": "Trabalhos em Destaque",
+      "headline": "Alguns dos meus projtetos.",
+      "text": "Abaixo está uma curadoria de vídeos 100% autorais, que demonstram minhas habilidades e versatilidade na pós-produção."
+    },
+    "cases": [
+      {
+        "category": "Case 01 / Reels e Shorts",
+        "title": "Vídeo curto em formato horizontal",
+        "format": "wide",
+        "summary": "Um vídeo que curto sobre treino. Este trabalho evidencia minha familiaridade com motion graphics que explanam o tema de forma didática, sotrytelling focado em retenção através de curiosidade e pacing que deixa tudo em harmonia.",
+        "fullVideo": {
+          "label": "[INSERIR VÍDEO COMPLETO]",
+          "title": "Player do vídeo completo do Case 01",
+          "embedUrl": "",
+          "src": "",
+          "placeholder": "Use src ou embedUrl com link direto .mp4/.webm/.gif, YouTube, Vimeo, ou outro embed liberado pela plataforma."
+        },
+        "technicalDescription": "",
+        "clips": [
+          { "label": "[INSERIR GIF 01] Gancho inicial", "src": "", "alt": "Trecho em GIF mostrando o gancho inicial" },
+          { "label": "[INSERIR GIF 02] Corte de ritmo", "src": "", "alt": "Trecho em GIF mostrando corte de ritmo" },
+          { "label": "[INSERIR GIF 03] Legenda/motion", "src": "", "alt": "Trecho em GIF mostrando legenda e motion" },
+          { "label": "[INSERIR GIF 04] Fechamento", "src": "", "alt": "Trecho em GIF mostrando fechamento do vídeo" }
+        ]
+      },
+      {
+        "category": "Case 02 / Gameplay YouTube",
+        "title": "Long-form para YouTube",
+        "format": "wide",
+        "summary": "Vídeo longo de gameplay. Este trabalho evidencia minha facilidade em transformar material bruto em um vídeo que entretem, prende atenção e passa a mensagem de forma clara, através de cortes que manipulam a emoção, pacing que rege o vídeo inteiro e storytelling que conecta o público com a história.",
+        "fullVideo": {
+          "label": "[INSERIR VÍDEO COMPLETO]",
+          "title": "Player do vídeo completo do Case 02",
+          "embedUrl": "",
+          "src": "",
+          "placeholder": "Use src ou embedUrl com link direto .mp4/.webm/.gif, YouTube, Vimeo, ou outro embed liberado pela plataforma."
+        },
+        "technicalDescription": "",
+        "clips": [
+          { "label": "[INSERIR GIF 01] Setup da cena", "src": "", "alt": "Trecho em GIF mostrando setup da cena" },
+          { "label": "[INSERIR GIF 02] Momento de humor", "src": "", "alt": "Trecho em GIF mostrando momento de humor" },
+          { "label": "[INSERIR GIF 03] Reação", "src": "", "alt": "Trecho em GIF mostrando reação" },
+          { "label": "[INSERIR GIF 04] Virada", "src": "", "alt": "Trecho em GIF mostrando virada do vídeo" }
+        ]
+      }
+    ],
+    "finalCta": {
+      "eyebrow": "Seu conteúdo pode ser o próximo.",
+      "headline": "Vamos conversar sobre o vídeo que você quer **publicar**.",
+      "text": "Me chama no WhatsApp e vamos falar sobre a sua proposta e seu projeto."
+    }
+  },
+  "about": {
+    "opening": {
+      "eyebrow": "Sobre mim",
+      "headline": "Olá!",
+      "text": "Me chamo Arthur e sou editor de vídeos, há 5 anos atrás descobri uma paixão pela pós-produção de conteúdo, e venho aprimorando minhas habilidades nesse setor desde então.",
+      "visionText": "Com habilidades variando entre cortes que **manipulam a emoção,** motion graphics apto de **explicar conceitos sem palavras**, pacing que rege o vídeo inteiro, **capturando a atenção** do telespectador e storytelling que **conecta qualquer um com sua história**, sou capaz de transformar material bruto em vídeos que entretêm, vendem e passam a mensagem de forma clara e envolvente.",
+      "photoNote": "[INSERIR FOTO REAL] Esta área deve receber uma foto sua."
+    },
+    "skills": {
+      "eyebrow": "Habilidades & softwares",
+      "headline": "Ferramentas a serviço da retenção.",
+      "text": "",
+      "items": [
+        "DaVinci Resolve",
+        "Fusion",
+        "Sound Design",
+        "Color Grading",
+        "Storytelling",
+        "Roteirização"
+      ]
+    },
+    "process": {
+      "eyebrow": "Como eu trabalho",
+      "headline": "Um processo simples, direto e revisável.",
+      "text": "",
+      "steps": [
+        {
+          "title": "Briefing + raw",
+          "text": "Uma reunião estabelecendo formato, objetivo e prazos a partir do seu material bruto."
+        },
+        {
+          "title": "==Trabalho sujo==",
+          "text": "Deixe toda a parte demorada comigo se e concentre apenas em criar o conteúdo."
+        },
+        {
+          "title": "Ajustes finais",
+          "text": "A revisão é inclusa no pacote! Se você achar necessário, eu faço ajustes para alinhar a entrega com sua visão."
+        },
+        {
+          "title": "Entrega final",
+          "text": "Um vídeo que passa sua mensagem, vende seu produto e entretem seu público, pronto para publicar."
+        }
+      ]
+    },
+    "risk": {
+      "eyebrow": "Menos risco",
+      "headline": "Comunicação direta, prazo combinado e revisão inclusa.",
+      "text": "A revisão faz parte do trabalho, então você não precisa se preocupar com entregas que não estejam de acordo com sua visão. A comunicação é direta e o prazo é combinado antes do início da edição."
+    },
+    "finalCta": {
+      "eyebrow": "Vamos transformar seu conteúdo.",
+      "headline": "Me chama e conta o que você quer **publicar**.",
+      "text": "Com uma conversa curta, eu entendo seu formato, prazo e o tipo de edição que faz sentido."
+    }
+  }
+}

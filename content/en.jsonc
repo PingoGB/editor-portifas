@@ -1,0 +1,224 @@
+// English content file.
+// Structure: every website block lives inside its section: global, nav, contact, home, work, and about.
+// Edit only the text inside quotation marks. Do not add code here.
+// Placeholders marked with [ADD ...] are temporary and should be replaced with real data.
+// To highlight a word or phrase in red, wrap it with **double asterisks**. Example: "Editing with **retention**".
+{
+  "meta": {
+    "lang": "en",
+    "title": "Video Editor Portfolio",
+    "description": "Freelance video editor portfolio for content creators."
+  },
+  "global": {
+    "brand": "Your Name / Editor",
+    "ctaLabel": "Let's talk"
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Featured Work",
+    "about": "About Me",
+    "menuButton": "Menu",
+    "languageToggle": "PT-BR",
+    "languageAria": "Switch language",
+    "ariaLabel": "Main navigation",
+    "skipLink": "Skip to content",
+    "nextEyebrow": "Next page",
+    "next": {
+      "home": "Next: Home",
+      "about": "Next: About Me",
+      "work": "Next: Featured Work"
+    }
+  },
+  "contact": {
+    "whatsappNumber": "5500000000000",
+    "prefilledMessage": "Hi! I saw your portfolio and want to talk about a project."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Editing for creators",
+      "headline": "Video editing built to **hold attention**, not just cut scenes.",
+      "subtext": "Cuts, rhythm, narrative, and visual polish for Reels, TikTok, Shorts, and YouTube with retention in mind."
+    },
+    "beforeAfter": {
+      "eyebrow": "Fast proof",
+      "headline": "From raw footage to a video that keeps people watching.",
+      "text": "",
+      "comparisons": [
+        {
+          "title": "Talking Head · Shorts",
+          "format": "vertical",
+          "raw": {
+            "type": "raw",
+            "label": "RAW",
+            "src": "./assets/videos/TALKHEAD_UNEDITED.mp4",
+            "alt": "Raw talking head clip before editing"
+          },
+          "edited": {
+            "type": "edited",
+            "label": "EDITED",
+            "src": "./assets/videos/TALKHEAD_EDITED.mp4",
+            "alt": "Talking head clip edited for Shorts"
+          }
+        },
+        {
+          "title": "Gameplay · Long-form YouTube",
+          "format": "horizontal",
+          "raw": {
+            "type": "raw",
+            "label": "RAW",
+            "src": "./assets/videos/GAMEPLAY_UNEDITED.mp4",
+            "alt": "Raw gameplay clip before editing"
+          },
+          "edited": {
+            "type": "edited",
+            "label": "EDITED",
+            "src": "./assets/videos/GAMEPLAY_EDITED.mp4",
+            "alt": "Gameplay clip edited for long-form YouTube"
+          }
+        }
+      ]
+    },
+    "deliverables": {
+      "eyebrow": "What I deliver",
+      "headline": "Editing with intention in every cut.",
+      "text": "Replace placeholders with real data when you have concrete numbers or proof. No made-up stats are used here.",
+      "items": [
+        {
+          "marker": "01",
+          "title": "Result",
+          "description": "[ADD REAL DATA] Videos edited for clarity, rhythm, and the desire to keep watching."
+        },
+        {
+          "marker": "02",
+          "title": "Time",
+          "description": "[ADD REAL DEADLINE] A direct workflow to turn raw footage into delivery without friction."
+        },
+        {
+          "marker": "03",
+          "title": "Strategic view",
+          "description": "Each editing decision considers hook, retention, platform context, and creator style."
+        }
+      ]
+    },
+    "miniAbout": {
+      "eyebrow": "About the editor",
+      "headline": "An editing eye for content that needs to perform.",
+      "text": "Video editor focused on content creators. I treat the cut as part of the story, not as a mechanical step.",
+      "linkLabel": "Read my story",
+      "photoNote": "[ADD REAL PHOTO] Use a well-lit, professional-looking photo of yourself."
+    },
+    "finalCta": {
+      "eyebrow": "Ready for better editing?",
+      "headline": "Send me your project and let's find the **right cut**.",
+      "text": "Contact happens directly through WhatsApp, with a quick conversation about goal, format, and deadline."
+    }
+  },
+  "work": {
+    "intro": {
+      "eyebrow": "Featured Work",
+      "headline": "Cases built to show rhythm, retention, and polish.",
+      "text": "This structure is made to grow: each case lives as an item in this list and can receive new clips without redesigning the page."
+    },
+    "cases": [
+      {
+        "category": "Case 01 / Reels and Shorts",
+        "title": "Short video in horizontal format",
+        "format": "wide",
+        "summary": "Short-form content focused on the first seconds, precise cuts, and visual progression, displayed in the real horizontal format in which it was produced.",
+        "fullVideo": {
+          "label": "[ADD FULL VIDEO]",
+          "title": "Full video player for Case 01",
+          "embedUrl": "",
+          "src": "",
+          "placeholder": "Use src or embedUrl with a direct .mp4/.webm/.gif link, YouTube, Vimeo, or another platform embed that allows it."
+        },
+        "technicalDescription": "In this case, the edit prioritizes the opening hook, removal of unnecessary pauses, fast-reading captions, and visual variation to sustain attention on small screens.",
+        "clips": [
+          { "label": "[ADD GIF 01] Opening hook", "src": "", "alt": "GIF clip showing the opening hook" },
+          { "label": "[ADD GIF 02] Rhythm cut", "src": "", "alt": "GIF clip showing a rhythm cut" },
+          { "label": "[ADD GIF 03] Caption/motion", "src": "", "alt": "GIF clip showing captions and motion" },
+          { "label": "[ADD GIF 04] Closing beat", "src": "", "alt": "GIF clip showing the closing beat" }
+        ]
+      },
+      {
+        "category": "Case 02 / YouTube Gameplay",
+        "title": "Gameplay with narrative rhythm",
+        "format": "wide",
+        "summary": "Long-form video focused on humor arc, clarity of events, and cuts that enhance reactions and timing.",
+        "fullVideo": {
+          "label": "[ADD FULL VIDEO]",
+          "title": "Full video player for Case 02",
+          "embedUrl": "",
+          "src": "",
+          "placeholder": "Use src or embedUrl with a direct .mp4/.webm/.gif link, YouTube, Vimeo, or another platform embed that allows it."
+        },
+        "technicalDescription": "In this case, the edit works through moment selection, joke construction, intentional pacing, and visual emphasis to turn raw gameplay into a watchable story.",
+        "clips": [
+          { "label": "[ADD GIF 01] Scene setup", "src": "", "alt": "GIF clip showing the scene setup" },
+          { "label": "[ADD GIF 02] Humor beat", "src": "", "alt": "GIF clip showing a humor beat" },
+          { "label": "[ADD GIF 03] Reaction", "src": "", "alt": "GIF clip showing a reaction" },
+          { "label": "[ADD GIF 04] Turnaround", "src": "", "alt": "GIF clip showing a turnaround" }
+        ]
+      }
+    ],
+    "finalCta": {
+      "eyebrow": "Your content can be the next case",
+      "headline": "Let's talk about the video you want to **publish**.",
+      "text": "Message me on WhatsApp with the content format, references, and desired deadline."
+    }
+  },
+  "about": {
+    "opening": {
+      "eyebrow": "About Me",
+      "headline": "Video editing built to **hold attention**, not just cut scenes.",
+      "text": "Video editor focused on content creators. Every cut is planned to retain the viewer.",
+      "visionText": "Before thinking about effects, I think about rhythm, intention, and story: get in quickly, remove what is extra, and make every cut help the audience take the next step.",
+      "photoNote": "[ADD REAL PHOTO] This area should receive your photo."
+    },
+    "skills": {
+      "eyebrow": "Skills & software",
+      "headline": "Tools serving the cut.",
+      "text": "Adjust this list according to your real skill set and current services.",
+      "items": [
+        "Premiere Pro",
+        "After Effects",
+        "Motion Graphics",
+        "Color Grading",
+        "Cut scripting"
+      ]
+    },
+    "process": {
+      "eyebrow": "How I work",
+      "headline": "A simple, direct, reviewable process.",
+      "text": "The goal is to make the path from raw footage to final delivery clear.",
+      "steps": [
+        {
+          "title": "Raw + briefing",
+          "text": "You send me the files and the goal of the video."
+        },
+        {
+          "title": "Focused edit",
+          "text": "I cut with retention, rhythm, and narrative in mind."
+        },
+        {
+          "title": "Review",
+          "text": "You receive a version to watch and request adjustments."
+        },
+        {
+          "title": "Final delivery",
+          "text": "I make the agreed changes and deliver the final file."
+        }
+      ]
+    },
+    "risk": {
+      "eyebrow": "Lower risk",
+      "headline": "Direct communication, agreed deadline, and one review included.",
+      "text": "One review round is already part of the process, so details can be aligned without turning delivery into guesswork."
+    },
+    "finalCta": {
+      "eyebrow": "Let's get your video out of raw footage",
+      "headline": "Message me and tell me what you want to **publish**.",
+      "text": "With a short conversation, I understand your format, deadline, and the kind of edit that makes sense."
+    }
+  }
+}

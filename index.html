@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio de editor de video freelancer para criadores de conteudo.">
+    <title>Portfolio Editor de Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css?v=vignette-visible-2">
+  </head>
+  <body>
+    <div class="vignette-backdrop" aria-hidden="true"></div>
+    <div class="vignette-overlay" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#app" data-text="nav.skipLink"></a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" data-brand></a>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false">
+        <span data-text="nav.menuButton"></span>
+      </button>
+
+      <nav class="site-nav" data-nav data-aria="nav.ariaLabel">
+        <a href="#home" data-text="nav.home"></a>
+        <a href="#about" data-text="nav.about"></a>
+        <a href="#work" data-text="nav.work"></a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="language-toggle" type="button" data-language-toggle data-text="nav.languageToggle" data-aria="nav.languageAria">
+        </button>
+        <a class="button button-small" data-whatsapp-link data-text="global.ctaLabel" target="_blank" rel="noreferrer"></a>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <script src="./app.js?v=media-links-2"></script>
+  </body>
+</html>
+
