@@ -278,7 +278,9 @@ function renderHome() {
   return `
     <div class="page">
       <section class="section hero home-presentation">
-        <div class="portrait" data-label="${get("home.presentation.photoNote")}"></div>
+        <div class="portrait">
+          <a href="https://ibb.co/5WG80P2Z"><img src="https://i.ibb.co/4ZKTqHJk/Arthur.png" alt="Arthur" border="0"></a>
+        </div>
         <div class="text-stack">
           <p class="eyebrow">${get("home.presentation.eyebrow")}</p>
           <h1 class="page-title">${rich(get("home.presentation.headline"))}</h1>

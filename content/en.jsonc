@@ -1,24 +1,24 @@
 // English content file.
 // Structure: every website block lives inside its section: global, nav, contact, home, and work.
 // Edit only the text inside quotation marks. Do not add code here.
-// Placeholders marked with [ADD ...] are temporary and should be replaced with real data.
-// On Home, edit [ADD PRESENTATION TITLE] and [ADD PRESENTATION PARAGRAPH] inside home.presentation.
+// Placeholders marked with [INSERIR ...] are temporary and should be replaced with real data.
+// On Home, edit [INSERIR TÍTULO DA APRESENTAÇÃO] and [INSERIR PARÁGRAFO DE APRESENTAÇÃO] inside home.presentation.
 // To highlight a word or phrase in red, wrap it with **double asterisks**. Example: "Editing with **retention**".
 {
   "meta": {
-    "lang": "en",
+    "lang": "en-US",
     "title": "Video Editor Portfolio",
     "description": "Freelance video editor portfolio for content creators."
   },
   "global": {
-    "brand": "Your Name / Editor",
+    "brand": "Arthur Gabriel / Editor",
     "ctaLabel": "Let's talk"
   },
   "nav": {
     "home": "Home",
     "work": "Featured Work",
     "menuButton": "Menu",
-    "languageToggle": "PT-BR",
+    "languageToggle": "🌐ㅤPT-BR",
     "languageAria": "Switch language",
     "ariaLabel": "Main navigation",
     "skipLink": "Skip to content",
@@ -29,16 +29,16 @@
     }
   },
   "contact": {
-    "whatsappNumber": "5500000000000",
+    "whatsappNumber": "5548996464120",
     "prefilledMessage": "Hi! I saw your portfolio and want to talk about a project."
   },
   "home": {
     "presentation": {
-      "eyebrow": "About the editor",
-      "headline": "[ADD PRESENTATION TITLE]",
-      "text": "[ADD PRESENTATION PARAGRAPH]",
+      "eyebrow": "",
+      "headline": "ABOUT ME",
+      "text": "Hi, my name is Arthur, and I started editing videos 5 years ago. At first, I just wanted to take inspiration from the editing style of creators I followed, but I quickly realized I had found something bigger. I started editing for fun, then for family and friends, until I made a decision: to take editing seriously as a career. Since then, I have studied the field every day, which led me to master techniques for different formats and platforms. Today, I am a creative and versatile editor who does not just execute, but thinks through every video with intention, from the first cut to the final delivery.",
       "photoAlt": "Arthur Gabriel, video editor",
-      "photoNote": "[ADD REAL PHOTO] This area should receive your photo."
+      "photoNote": ""
     },
     "skills": {
       "eyebrow": "Skills",
@@ -47,24 +47,26 @@
       "items": [
         "Storytelling",
         "Cut scripting",
-        "Color Grading",
+        "Graphic effects",
         "Sound Design",
-        "Motion Graphics"
+        "Motion Graphics",
+        "Pacing"
       ]
     },
     "tools": {
       "eyebrow": "Software",
-      "headline": "Editing tools.",
+      "headline": "Work tools.",
       "text": "",
       "items": [
         "DaVinci Resolve",
         "Fusion",
-        "Color Page"
+        "Color Page",
+        "AI-assisted editing"
       ]
     },
     "beforeAfter": {
-      "eyebrow": "Fast proof",
-      "headline": "From raw footage to a video that keeps people watching.",
+      "eyebrow": "Quick proof",
+      "headline": "From raw footage to a video that holds attention.",
       "text": "",
       "comparisons": [
         {
@@ -74,13 +76,13 @@
             "type": "raw",
             "label": "RAW",
             "src": "./assets/videos/TALKHEAD_UNEDITED.mp4",
-            "alt": "Raw talking head clip before editing"
+            "alt": "Raw talking head before editing"
           },
           "edited": {
             "type": "edited",
             "label": "EDITED",
             "src": "./assets/videos/TALKHEAD_EDITED.mp4",
-            "alt": "Talking head clip edited for Shorts"
+            "alt": "Talking head edited for Shorts"
           }
         },
         {
@@ -90,13 +92,13 @@
             "type": "raw",
             "label": "RAW",
             "src": "./assets/videos/GAMEPLAY_UNEDITED.mp4",
-            "alt": "Raw gameplay clip before editing"
+            "alt": "Raw gameplay before editing"
           },
           "edited": {
             "type": "edited",
             "label": "EDITED",
             "src": "./assets/videos/GAMEPLAY_EDITED.mp4",
-            "alt": "Gameplay clip edited for long-form YouTube"
+            "alt": "Gameplay edited for long-form YouTube"
           }
         }
       ]
@@ -108,80 +110,80 @@
       "steps": [
         {
           "title": "Briefing + raw",
-          "text": "You send the raw footage and we align format, goal, and deadline through direct communication from the start."
+          "text": "Send me the footage and we get aligned, whether through a quick WhatsApp chat or a more detailed meeting to close a package, define the intention, and set the deadline. You choose the format, I adapt."
         },
         {
-          "title": "==Heavy lifting==",
-          "text": "I handle the time-consuming edit so you can focus on the content, with retention, rhythm, and clarity guiding the cut."
+          "title": "==Dirty work==",
+          "text": "While I edit, you create. No worrying about the time-consuming part, no wasting time inside software. You focus on what matters: producing more content. I handle the rest."
         },
         {
-          "title": "Final adjustments",
-          "text": "A review round is included: if something needs to better match your vision, I adjust it before final delivery."
+          "title": "Open communication",
+          "text": "Throughout the whole project, we keep talking about the video. Review is included, so if something needs adjustment or a new idea comes up, just say the word. I am here until the video is exactly how you imagined it."
         },
         {
           "title": "Final delivery",
-          "text": "You receive a video ready to publish, delivered within the agreed deadline and built to carry your message clearly."
+          "text": "Video ready, on the agreed deadline, in high quality, and prepared to publish right away. No surprises, no extra work on your side. Just hit publish."
         }
       ]
     },
     "finalCta": {
-      "eyebrow": "Ready for better editing?",
-      "headline": "Send me your project and let's find the **right cut**.",
-      "text": "Contact happens directly through WhatsApp, with a quick conversation about goal, format, and deadline."
+      "eyebrow": "Ready to get more reach?",
+      "headline": "Get in touch and let's turn your content into a video that **holds attention.**",
+      "text": "Contact happens directly through WhatsApp, with a straightforward conversation about plans, projects, and deadlines."
     }
   },
   "work": {
     "intro": {
       "eyebrow": "Featured Work",
-      "headline": "Cases built to show rhythm, retention, and polish.",
-      "text": "This structure is made to grow: each case lives as an item in this list and can receive new clips without redesigning the page."
+      "headline": "Some of my projects.",
+      "text": "Below is a curated selection of 100% original videos that demonstrate my skills and versatility in post-production."
     },
     "cases": [
       {
         "category": "Case 01 / Reels and Shorts",
         "title": "Short video in horizontal format",
         "format": "wide",
-        "summary": "Short-form content focused on the first seconds, precise cuts, and visual progression, displayed in the real horizontal format in which it was produced.",
+        "summary": "A short video about training. This work shows my familiarity with motion graphics that explain the subject clearly, storytelling focused on retention through curiosity, and pacing that keeps everything in harmony.",
         "fullVideo": {
-          "label": "[ADD FULL VIDEO]",
+          "label": "[INSERIR VÍDEO COMPLETO]",
           "title": "Full video player for Case 01",
-          "embedUrl": "",
+          "embedUrl": "https://vimeo.com/1208581458?fl=ip&fe=ec",
           "src": "",
-          "placeholder": "Use src or embedUrl with a direct .mp4/.webm/.gif link, YouTube, Vimeo, or another platform embed that allows it."
+          "placeholder": "Use src ou embedUrl com link direto .mp4/.webm/.gif, YouTube, Vimeo, ou outro embed liberado pela plataforma."
         },
-        "technicalDescription": "In this case, the edit prioritizes the opening hook, removal of unnecessary pauses, fast-reading captions, and visual variation to sustain attention on small screens.",
+        "technicalDescription": "",
         "clips": [
-          { "label": "[ADD GIF 01] Opening hook", "src": "", "alt": "GIF clip showing the opening hook" },
-          { "label": "[ADD GIF 02] Rhythm cut", "src": "", "alt": "GIF clip showing a rhythm cut" },
-          { "label": "[ADD GIF 03] Caption/motion", "src": "", "alt": "GIF clip showing captions and motion" },
-          { "label": "[ADD GIF 04] Closing beat", "src": "", "alt": "GIF clip showing the closing beat" }
+          { "label": "", "src": "./assets/videos/erros no treino/treino_gif01.mp4", "alt": "GIF clip showing the opening hook" },
+          { "label": "", "src": "./assets/videos/erros no treino/treino_gif02.mp4", "alt": "GIF clip showing a rhythm cut" },
+          { "label": "", "src": "./assets/videos/erros no treino/treino_gif03.mp4", "alt": "GIF clip showing captions and motion" },
+          { "label": "", "src": "./assets/videos/erros no treino/treino_gif04.mp4", "alt": "GIF clip showing the video's closing beat" }
         ]
       },
       {
         "category": "Case 02 / YouTube Gameplay",
-        "title": "Gameplay with narrative rhythm",
+        "title": "Long-form for YouTube",
         "format": "wide",
-        "summary": "Long-form video focused on humor arc, clarity of events, and cuts that enhance reactions and timing.",
+        "summary": "A long-form gameplay video. This work shows my ability to turn raw footage into a video that entertains, holds attention, and delivers the message clearly through cuts that shape emotion, pacing that drives the entire video, and storytelling that connects the audience with the story.",
         "fullVideo": {
-          "label": "[ADD FULL VIDEO]",
+          "label": "[INSERIR VÍDEO COMPLETO]",
           "title": "Full video player for Case 02",
-          "embedUrl": "",
+          "embedUrl": "https://vimeo.com/1208581377?fl=ip&fe=ec",
           "src": "",
-          "placeholder": "Use src or embedUrl with a direct .mp4/.webm/.gif link, YouTube, Vimeo, or another platform embed that allows it."
+          "placeholder": "Use src ou embedUrl com link direto .mp4/.webm/.gif, YouTube, Vimeo, ou outro embed liberado pela plataforma."
         },
-        "technicalDescription": "In this case, the edit works through moment selection, joke construction, intentional pacing, and visual emphasis to turn raw gameplay into a watchable story.",
+        "technicalDescription": "",
         "clips": [
-          { "label": "[ADD GIF 01] Scene setup", "src": "", "alt": "GIF clip showing the scene setup" },
-          { "label": "[ADD GIF 02] Humor beat", "src": "", "alt": "GIF clip showing a humor beat" },
-          { "label": "[ADD GIF 03] Reaction", "src": "", "alt": "GIF clip showing a reaction" },
-          { "label": "[ADD GIF 04] Turnaround", "src": "", "alt": "GIF clip showing a turnaround" }
+          { "label": "", "src": "./assets/videos/isaac/isaac_gif01.mp4", "alt": "GIF clip showing the scene setup" },
+          { "label": "", "src": "./assets/videos/isaac/isaac_gif02.mp4", "alt": "GIF clip showing a humor moment" },
+          { "label": "", "src": "./assets/videos/isaac/isaac_gif03.mp4", "alt": "GIF clip showing a reaction" },
+          { "label": "", "src": "./assets/videos/isaac/isaac_gif04.mp4", "alt": "GIF clip showing the video's turning point" }
         ]
       }
     ],
     "finalCta": {
-      "eyebrow": "Your content can be the next case",
+      "eyebrow": "Your content could be next.",
       "headline": "Let's talk about the video you want to **publish**.",
-      "text": "Message me on WhatsApp with the content format, references, and desired deadline."
+      "text": "Message me on WhatsApp and let's talk about your idea and your project."
     }
   }
 }

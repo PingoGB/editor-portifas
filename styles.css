@@ -637,16 +637,7 @@ a {
   min-height: auto;
 }
 
-.portrait {
-  aspect-ratio: 4 / 5;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background:
-    radial-gradient(circle at 65% 28%, rgba(246, 242, 234, 0.2), transparent 19%),
-    linear-gradient(135deg, rgba(123, 17, 24, 0.28), transparent 38%),
-    #080808;
-}
+
 
 .portrait::before {
   content: "";
@@ -663,6 +654,20 @@ a {
   max-width: 16rem;
   color: rgba(246, 242, 234, 0.72);
   font-size: 0.9rem;
+}
+
+.portrait:has(img)::before,
+.portrait:has(img)::after {
+  content: none;
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  background: transparent;
 }
 
 .text-stack h2 {

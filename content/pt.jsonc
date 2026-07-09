@@ -18,7 +18,7 @@
     "home": "Home",
     "work": "Trabalhos em Destaque",
     "menuButton": "Menu",
-    "languageToggle": "EN-US",
+    "languageToggle": "🌐ㅤEN-US",
     "languageAria": "Trocar idioma",
     "ariaLabel": "Navegação principal",
     "skipLink": "Pular para o conteúdo",
@@ -34,11 +34,11 @@
   },
   "home": {
     "presentation": {
-      "eyebrow": "Sobre o editor",
-      "headline": "[INSERIR TÍTULO DA APRESENTAÇÃO]",
-      "text": "[INSERIR PARÁGRAFO DE APRESENTAÇÃO]",
+      "eyebrow": "",
+      "headline": "SOBRE MIM",
+      "text": "Olá, me chamo Arthur e comecei a editar vídeos há 5 anos. No início, queria apenas me inspirar na edição dos criadores que acompanhava — mas logo percebi que tinha encontrado algo maior. Comecei editando por diversão, depois para familiares e amigos, até tomar uma decisão: levar a edição a sério, como carreira. Desde então, estudo a área diariamente, o que me levou a dominar técnicas para diferentes formatos e plataformas. Hoje sou um editor criativo e versátil, que não só executa — mas pensa cada vídeo com intenção, do primeiro corte à entrega final.",
       "photoAlt": "Arthur Gabriel, editor de vídeo",
-      "photoNote": "[INSERIR FOTO REAL] Esta área deve receber uma foto sua."
+      "photoNote": ""
     },
     "skills": {
       "eyebrow": "Habilidades",
@@ -47,9 +47,10 @@
       "items": [
         "Storytelling",
         "Roteirização",
-        "Color Grading",
+        "Efeitos gráficos",
         "Sound Design",
-        "Motion Graphics"
+        "Motion Graphics",
+        "Pacing"
       ]
     },
     "tools": {
@@ -59,7 +60,8 @@
       "items": [
         "DaVinci Resolve",
         "Fusion",
-        "Color Page"
+        "Color Page",
+        "Edição com IA"
       ]
     },
     "beforeAfter": {
@@ -108,19 +110,19 @@
       "steps": [
         {
           "title": "Briefing + raw",
-          "text": "Você me manda o material bruto e a gente alinha formato, objetivo e prazo em uma comunicação direta desde o começo."
+          "text": "Me manda o material e a gente se entende — seja uma conversa rápida no WhatsApp ou uma reunião mais detalhada pra fechar pacote, alinhar intenção e definir prazo. Você escolhe o formato, eu adapto."
         },
         {
           "title": "==Trabalho sujo==",
-          "text": "Eu assumo a parte demorada da edição para você focar no conteúdo, sempre buscando retenção, ritmo e clareza."
+          "text": "Enquanto eu edito, você cria. Sem se preocupar com a parte demorada, sem perder tempo com software — você foca no que importa: produzir mais conteúdo. Eu resolvo o resto."
         },
         {
-          "title": "Ajustes finais",
-          "text": "A revisão já está inclusa: se algo precisar alinhar melhor com sua visão, eu ajusto antes da entrega final."
+          "title": "Comunicação aberta",
+          "text": "Durante todo o projeto, continuamos a nos comunicar sobre o vídeo. A revisão está inclusa, se algo precisar de ajuste ou surgir uma ideia nova, é só falar — estou aqui até o vídeo estar exatamente como você imaginou."
         },
         {
           "title": "Entrega final",
-          "text": "Você recebe um vídeo pronto para publicar, dentro do prazo combinado e preparado para passar sua mensagem com força."
+          "text": "Vídeo pronto, no prazo combinado, em alta qualidade e preparado pra publicar direto. Sem surpresa, sem retrabalho do seu lado — é só postar."
         }
       ]
     },
@@ -133,7 +135,7 @@
   "work": {
     "intro": {
       "eyebrow": "Trabalhos em Destaque",
-      "headline": "Alguns dos meus projtetos.",
+      "headline": "Alguns dos meus projetos.",
       "text": "Abaixo está uma curadoria de vídeos 100% autorais, que demonstram minhas habilidades e versatilidade na pós-produção."
     },
     "cases": [
@@ -141,40 +143,40 @@
         "category": "Case 01 / Reels e Shorts",
         "title": "Vídeo curto em formato horizontal",
         "format": "wide",
-        "summary": "Um vídeo que curto sobre treino. Este trabalho evidencia minha familiaridade com motion graphics que explanam o tema de forma didática, sotrytelling focado em retenção através de curiosidade e pacing que deixa tudo em harmonia.",
+        "summary": "Um vídeo curto sobre treino. Este trabalho evidencia minha familiaridade com motion graphics que explanam o tema de forma didática, storytelling focado em retenção através de curiosidade e pacing que deixa tudo em harmonia.",
         "fullVideo": {
           "label": "[INSERIR VÍDEO COMPLETO]",
           "title": "Player do vídeo completo do Case 01",
-          "embedUrl": "",
+          "embedUrl": "https://vimeo.com/1208581458?fl=ip&fe=ec",
           "src": "",
           "placeholder": "Use src ou embedUrl com link direto .mp4/.webm/.gif, YouTube, Vimeo, ou outro embed liberado pela plataforma."
         },
         "technicalDescription": "",
         "clips": [
-          { "label": "[INSERIR GIF 01] Gancho inicial", "src": "", "alt": "Trecho em GIF mostrando o gancho inicial" },
-          { "label": "[INSERIR GIF 02] Corte de ritmo", "src": "", "alt": "Trecho em GIF mostrando corte de ritmo" },
-          { "label": "[INSERIR GIF 03] Legenda/motion", "src": "", "alt": "Trecho em GIF mostrando legenda e motion" },
-          { "label": "[INSERIR GIF 04] Fechamento", "src": "", "alt": "Trecho em GIF mostrando fechamento do vídeo" }
+          { "label": "", "src": "./assets/videos/erros no treino/treino_gif01.mp4", "alt": "Trecho em GIF mostrando o gancho inicial" },
+          { "label": "", "src": "./assets/videos/erros no treino/treino_gif02.mp4", "alt": "Trecho em GIF mostrando corte de ritmo" },
+          { "label": "", "src": "./assets/videos/erros no treino/treino_gif03.mp4", "alt": "Trecho em GIF mostrando legenda e motion" },
+          { "label": "", "src": "./assets/videos/erros no treino/treino_gif04.mp4", "alt": "Trecho em GIF mostrando fechamento do vídeo" }
         ]
       },
       {
         "category": "Case 02 / Gameplay YouTube",
         "title": "Long-form para YouTube",
         "format": "wide",
-        "summary": "Vídeo longo de gameplay. Este trabalho evidencia minha facilidade em transformar material bruto em um vídeo que entretem, prende atenção e passa a mensagem de forma clara, através de cortes que manipulam a emoção, pacing que rege o vídeo inteiro e storytelling que conecta o público com a história.",
+        "summary": "Vídeo longo de gameplay. Este trabalho evidencia minha facilidade em transformar material bruto em um vídeo que entretém, prende atenção e passa a mensagem de forma clara, através de cortes que manipulam a emoção, pacing que rege o vídeo inteiro e storytelling que conecta o público com a história.",
         "fullVideo": {
           "label": "[INSERIR VÍDEO COMPLETO]",
           "title": "Player do vídeo completo do Case 02",
-          "embedUrl": "",
+          "embedUrl": "https://vimeo.com/1208581377?fl=ip&fe=ec",
           "src": "",
           "placeholder": "Use src ou embedUrl com link direto .mp4/.webm/.gif, YouTube, Vimeo, ou outro embed liberado pela plataforma."
         },
         "technicalDescription": "",
         "clips": [
-          { "label": "[INSERIR GIF 01] Setup da cena", "src": "", "alt": "Trecho em GIF mostrando setup da cena" },
-          { "label": "[INSERIR GIF 02] Momento de humor", "src": "", "alt": "Trecho em GIF mostrando momento de humor" },
-          { "label": "[INSERIR GIF 03] Reação", "src": "", "alt": "Trecho em GIF mostrando reação" },
-          { "label": "[INSERIR GIF 04] Virada", "src": "", "alt": "Trecho em GIF mostrando virada do vídeo" }
+          { "label": "", "src": "./assets/videos/isaac/isaac_gif01.mp4", "alt": "Trecho em GIF mostrando setup da cena" },
+          { "label": "", "src": "./assets/videos/isaac/isaac_gif02.mp4", "alt": "Trecho em GIF mostrando momento de humor" },
+          { "label": "", "src": "./assets/videos/isaac/isaac_gif03.mp4", "alt": "Trecho em GIF mostrando reação" },
+          { "label": "", "src": "./assets/videos/isaac/isaac_gif04.mp4", "alt": "Trecho em GIF mostrando virada do vídeo" }
         ]
       }
     ],
