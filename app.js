@@ -114,7 +114,7 @@ function stripJsonComments(text) {
 
 async function loadContent(language) {
   if (!contentCache[language]) {
-    const response = await fetch(`./content/${language}.jsonc`);
+    const response = await fetch(`./content/${language}.jsonc`, { cache: "no-store" });
     const text = await response.text();
     contentCache[language] = JSON.parse(stripJsonComments(text));
   }
@@ -134,6 +134,11 @@ function whatsappUrl() {
 function updateSharedText() {
   document.querySelector("[data-brand]").textContent = get("global.brand");
   document.querySelectorAll("[data-text]").forEach((element) => {
+    if (element.dataset.text === "global.ctaLabel") {
+      element.innerHTML = whatsappButtonContent();
+      return;
+    }
+
     element.textContent = get(element.dataset.text);
   });
   document.querySelectorAll("[data-aria]").forEach((element) => {
@@ -144,8 +149,16 @@ function updateSharedText() {
   });
 }
 
+function whatsappButtonContent() {
+  return `
+    <img class="button-icon" src="./assets/images/whatsapp.png" alt="" aria-hidden="true">
+    <span>${get("global.ctaLabel")}</span>
+  `;
+}
+
 function button(labelPath, extraClass = "") {
-  return `<a class="button ${extraClass}" href="${whatsappUrl()}" target="_blank" rel="noreferrer">${get(labelPath)}</a>`;
+  const content = labelPath === "global.ctaLabel" ? whatsappButtonContent() : get(labelPath);
+  return `<a class="button ${extraClass}" href="${whatsappUrl()}" target="_blank" rel="noreferrer">${content}</a>`;
 }
 
 function renderMediaAsset(item) {
@@ -270,6 +283,35 @@ function compactList(items) {
   `;
 }
 
+const toolLogos = {
+  "DaVinci Resolve": "da vinci resolve.png",
+  "Fusion": "fusion page.png",
+  "Color Page": "color page.png",
+  "Edição com IA": "ia.png",
+  "AI-assisted editing": "ia.png",
+};
+
+const toolLogoClasses = {
+  "DaVinci Resolve": "tool-logo-davinci",
+  "Fusion": "tool-logo-fusion",
+  "Color Page": "tool-logo-color",
+  "Edição com IA": "tool-logo-ai",
+  "AI-assisted editing": "tool-logo-ai",
+};
+
+function toolsList(items) {
+  return `
+    <div class="compact-list tool-list">
+      ${items.map((item) => `
+        <span>
+          <img class="tool-logo ${toolLogoClasses[item]}" src="./assets/images/${toolLogos[item]}" alt="" aria-hidden="true">
+          <span>${rich(item)}</span>
+        </span>
+      `).join("")}
+    </div>
+  `;
+}
+
 function renderHome() {
   const skills = get("home.skills.items");
   const tools = get("home.tools.items");
@@ -279,12 +321,13 @@ function renderHome() {
     <div class="page">
       <section class="section hero home-presentation">
         <div class="portrait">
-          <a href="https://ibb.co/5WG80P2Z"><img src="https://i.ibb.co/4ZKTqHJk/Arthur.png" alt="Arthur" border="0"></a>
+          <img src="./assets/images/Arthur.png" alt="${get("home.presentation.photoAlt")}">
         </div>
         <div class="text-stack">
           <p class="eyebrow">${get("home.presentation.eyebrow")}</p>
           <h1 class="page-title">${rich(get("home.presentation.headline"))}</h1>
-          <p>${rich(get("home.presentation.text"))}</p>
+          <p class="presentation-copy">${rich(get("home.presentation.text"))}</p>
+          <p class="presentation-quote">${rich(get("home.presentation.quote"))}</p>
         </div>
       </section>
 
@@ -307,7 +350,7 @@ function renderHome() {
           </div>
           <p>${rich(get("home.tools.text"))}</p>
         </div>
-        ${compactList(tools)}
+        ${toolsList(tools)}
       </section>
 
       <section class="section section-tight">

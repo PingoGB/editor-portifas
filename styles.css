@@ -197,6 +197,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   width: fit-content;
   min-height: 3.2rem;
   padding: 0.95rem 1.35rem;
@@ -206,6 +207,14 @@ a {
   font-weight: 900;
   line-height: 1;
   transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.button-icon {
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  object-fit: contain;
+  border-radius: 999px;
 }
 
 .button:hover {
@@ -635,9 +644,22 @@ a {
 
 .home-presentation {
   min-height: auto;
+  align-items: start;
 }
 
+.home-presentation .text-stack {
+  padding-top: clamp(0.75rem, 2vw, 1.5rem);
+}
 
+.home-presentation .presentation-copy {
+  margin-top: clamp(2.4rem, 6vw, 4.5rem);
+}
+
+.home-presentation .presentation-quote {
+  margin-top: clamp(2.1rem, 5vw, 3.4rem);
+  font-size: clamp(1.1rem, 1.76vw, 1.28rem);
+  font-style: italic;
+}
 
 .portrait::before {
   content: "";
@@ -929,6 +951,7 @@ a {
 .compact-list span {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   min-height: 2.6rem;
   padding: 0.65rem 0.85rem;
   border: 1px solid var(--line);
@@ -942,6 +965,24 @@ a {
 .compact-list span:hover {
   border-color: var(--red);
   transform: scale(1.05);
+}
+
+.tool-logo {
+  width: 1.5em;
+  height: 1.5em;
+  flex: 0 0 auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.tool-logo-davinci {
+  width: 4em;
+  height: 4em;
+}
+
+.tool-logo-color {
+  width: 2em;
+  height: 2em;
 }
 
 .timeline {
