@@ -690,7 +690,7 @@ a {
   object-fit: contain;
   object-position: center bottom;
   background: transparent;
-  filter: drop-shadow(0 28px 42px rgba(0, 0, 0, 0.52));
+  filter: drop-shadow(0 28px 42px rgba(84, 19, 19, 0.52));
 }
 
 .text-stack h2 {
