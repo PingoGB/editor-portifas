@@ -161,6 +161,14 @@ function button(labelPath, extraClass = "") {
   return `<a class="button ${extraClass}" href="${whatsappUrl()}" target="_blank" rel="noreferrer">${content}</a>`;
 }
 
+function lazyVideo(src, attributes, sourceType = "video/mp4") {
+  return `
+    <video ${attributes} preload="none">
+      <source data-src="${escapeHtml(src)}" type="${sourceType}">
+    </video>
+  `;
+}
+
 function renderMediaAsset(item) {
   if (!item.src) {
     return "";
@@ -172,7 +180,7 @@ function renderMediaAsset(item) {
   }
 
   if (isVideoFile(item.src)) {
-    return `<video src="${item.src}" autoplay muted loop playsinline aria-label="${item.alt || item.label}"></video>`;
+    return lazyVideo(item.src, `autoplay muted loop playsinline aria-label="${escapeHtml(item.alt || item.label)}"`);
   }
 
   if (isImageFile(item.src)) {
@@ -209,7 +217,7 @@ function renderFullVideo(video) {
   if (video.src && isVideoFile(video.src)) {
     return `
       <div class="full-video">
-        <video src="${video.src}" controls preload="metadata" playsinline aria-label="${video.title}"></video>
+        ${lazyVideo(video.src, `controls playsinline aria-label="${escapeHtml(video.title)}"`)}
       </div>
     `;
   }
@@ -258,7 +266,7 @@ function beforeAfterVideo(item) {
   return `
     <figure class="before-after-video before-after-video-${item.type}">
       <span class="before-after-tag">${item.label}</span>
-      <video src="${item.src}" autoplay muted loop playsinline aria-label="${item.alt}"></video>
+      ${lazyVideo(item.src, `autoplay muted loop playsinline aria-label="${escapeHtml(item.alt)}"`)}
     </figure>
   `;
 }
@@ -456,6 +464,7 @@ function render() {
   requestAnimationFrame(() => {
     app.classList.add("is-visible");
     observeReveals();
+    observeLazyVideos();
   });
   window.scrollTo({ top: 0, behavior: "instant" });
 }
@@ -487,6 +496,53 @@ const revealObserver = "IntersectionObserver" in window
     });
   }, { threshold: 0.12 })
   : null;
+
+function loadVideo(video) {
+  if (video.dataset.loaded === "true") {
+    return;
+  }
+
+  video.querySelectorAll("source[data-src]").forEach((source) => {
+    source.src = source.dataset.src;
+    source.removeAttribute("data-src");
+  });
+
+  video.dataset.loaded = "true";
+  video.load();
+
+  if (video.hasAttribute("autoplay")) {
+    video.play().catch(() => {});
+  }
+}
+
+const lazyVideoObserver = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        loadVideo(entry.target);
+        lazyVideoObserver.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: "200px" })
+  : null;
+
+function observeLazyVideos() {
+  const videos = app.querySelectorAll("video source[data-src]");
+
+  videos.forEach((source) => {
+    const video = source.closest("video");
+
+    if (!video) {
+      return;
+    }
+
+    if (lazyVideoObserver) {
+      lazyVideoObserver.observe(video);
+    } else {
+      loadVideo(video);
+    }
+  });
+}
 
 function observeReveals() {
   const revealItems = app.querySelectorAll(".section, .cta-block, .case, .deliver-item, .clip, .full-video");
