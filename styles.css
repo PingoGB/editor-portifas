@@ -690,6 +690,7 @@ a {
   object-fit: contain;
   object-position: center bottom;
   background: transparent;
+  filter: drop-shadow(0 28px 42px rgba(0, 0, 0, 0.52));
 }
 
 .text-stack h2 {
@@ -779,6 +780,24 @@ a {
   background: rgba(123, 17, 24, 0.12);
   color: var(--red);
   transform: translateY(-1px);
+}
+
+.site-footer {
+  width: 100%;
+  padding: 1.6rem 1rem;
+  background: #030303;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  color: rgba(246, 242, 234, 0.64);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.site-footer span {
+  color: #c9a84c;
 }
 
 .work-intro,

@@ -252,6 +252,14 @@ function finalCta(section, includeNext = true) {
   `;
 }
 
+function footer() {
+  return `
+    <footer class="site-footer" role="contentinfo">
+      <p><span aria-hidden="true">©</span>${get("footer.copyright").replace("©", "")}</p>
+    </footer>
+  `;
+}
+
 function mediaPanel(item) {
   return `
     <div class="media-panel">
@@ -394,6 +402,7 @@ function renderHome() {
       </section>
 
       ${finalCta("home.finalCta")}
+      ${footer()}
       <span class="pixel-signature" aria-hidden="true"></span>
     </div>
   `;
@@ -436,6 +445,7 @@ function renderWork() {
       </section>
 
       ${finalCta("work.finalCta", false)}
+      ${footer()}
     </div>
   `;
 }
